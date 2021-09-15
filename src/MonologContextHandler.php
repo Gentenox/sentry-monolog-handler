@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace SentryMonologHandler;
+namespace Gentenox\SentryMonologHandler;
 
 use Monolog\Handler\AbstractProcessingHandler;
 use Monolog\Logger;

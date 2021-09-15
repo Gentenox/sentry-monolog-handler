@@ -24,7 +24,7 @@ monolog:
 
 ```yaml
 monolog_context_handler:
-  class: SentryMonologHandler/MonologContextHandler
+  class: Gentenox/SentryMonologHandler/MonologContextHandler
   arguments:
     $hub: '@Sentry\State\HubInterface'
     $level: !php/const Monolog\Logger::ERROR
