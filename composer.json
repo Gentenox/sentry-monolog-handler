@@ -19,5 +19,6 @@
         "symfony/monolog-bundle": ">=3.7",
         "sentry/sentry-symfony": ">=4.2"
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "license": "MIT"
 }
