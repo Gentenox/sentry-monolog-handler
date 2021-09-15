@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Gentenox\SentryMonologHandler;
+namespace SentryMonologHandler;
 
 /**
  * This class contains custom sentry monolog field keys that used in MonologContextHandler
