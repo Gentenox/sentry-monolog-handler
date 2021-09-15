@@ -1,0 +1,17 @@
+{
+    "name": "gentenox/sentry-monolog-handler",
+    "description": "Custom Sentry handler for Monolog for sending log context data to sentry events\nand it's focussed on ease-of-use and elegant syntax.",
+    "version": "1.0.0",
+    "keywords": ["symfony", "sentry"],
+    "authors": [
+        {
+            "name": "vadim-sychov",
+            "email": "vadim.sychov.99@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.*",
+        "symfony/monolog-bundle": ">=3.7.*",
+        "sentry/sentry-symfony": ">=4.2.*"
+    }
+}
