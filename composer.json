@@ -1,7 +1,6 @@
 {
     "name": "gentenox/sentry-monolog-handler",
     "description": "Custom Sentry handler for Monolog for sending log context data to sentry events\nand it's focussed on ease-of-use and elegant syntax.",
-    "version": "1.0.1",
     "keywords": ["symfony", "sentry"],
     "authors": [
         {
