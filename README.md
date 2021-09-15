@@ -60,4 +60,3 @@ $logger->error('Invalid postback received', [
     MonologFields::FINGERPRINT => ['postback_validation_fingerprint']
 ]);
 ```
-
