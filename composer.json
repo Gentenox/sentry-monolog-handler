@@ -14,8 +14,8 @@
         }
     },
     "require": {
-        "php": ">=7.1",
-        "symfony/monolog-bundle": ">=3.7",
+        "php": ">=8.1",
+        "symfony/monolog-bundle": ">=3.8",
         "sentry/sentry-symfony": ">=4.2"
     },
     "minimum-stability": "stable",

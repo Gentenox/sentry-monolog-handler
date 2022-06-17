@@ -32,7 +32,7 @@ monolog_context_handler:
 
 ## Basic Usage
 
-In examples below used monolog logger that implements **Psr\Log\LoggerInterface** 
+In examples below used monolog logger that implements **Psr\Log\LoggerInterface**
 
 ### Log error with context data
 
@@ -51,12 +51,12 @@ These specific properties will not be added to logs and used only for providing 
 
 Field | Type | Description
 ----- | ---- | -----------
-`MonologFields::TAGS` | array | Contains Sentry tags. Tags are key/value string pairs and used for filtering events
-`MonologFields::FINGERPRINT` | array | Contains Sentry fingerprint. Events with the same fingerprint are grouped together into an issue
+`MonologFields::Tags` | array | Contains Sentry tags. Tags are key/value string pairs and used for filtering events
+`MonologFields::Fingerprint` | array | Contains Sentry fingerprint. Events with the same fingerprint are grouped together into an issue
 
 ```php
 $logger->error('Invalid postback received', [
-    MonologFields::TAGS => ['scope' => 'postback_validation']
-    MonologFields::FINGERPRINT => ['postback_validation_fingerprint']
+    MonologFields::Tags->value => ['scope' => 'postback_validation']
+    MonologFields::Fingerprint->value => ['postback_validation_fingerprint']
 ]);
 ```
