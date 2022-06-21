@@ -4,8 +4,8 @@
     "keywords": ["symfony", "sentry"],
     "authors": [
         {
-            "name": "vadim-sychov",
-            "email": "vadim.sychov.99@gmail.com"
+            "name": "Gentenox team",
+            "email": "info@gentenox.com"
         }
     ],
     "autoload": {
