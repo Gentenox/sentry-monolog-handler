@@ -51,16 +51,23 @@ class MonologContextHandler extends AbstractProcessingHandler
 
             if (isset($record->context[MonologFields::Tags->value])) {
                 $scope->setTags($record->context[MonologFields::Tags->value]);
-                unset($record->context[MonologFields::Tags->value]);
             }
 
             if (isset($record->context[MonologFields::Fingerprint->value])) {
                 $scope->setFingerprint($record->context[MonologFields::Fingerprint->value]);
-                unset($record->context[MonologFields::Fingerprint->value]);
             }
 
             if (isset($record->context)) {
-                $scope->setContext('Context data', $record->context);
+                $context = array_filter(
+                    $record->context,
+                    static fn($item, $key) => !in_array(
+                        $key,
+                        [MonologFields::Tags->value, MonologFields::Fingerprint->value],
+                        true
+                    ),
+                    ARRAY_FILTER_USE_BOTH
+                );
+                $scope->setContext('Context data', $context);
             }
 
             $this->hub->captureEvent($event, $hint);
